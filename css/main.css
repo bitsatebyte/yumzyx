@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap');
+
 :root {
     --primary: #EC1E69;
     --secondary: #213454;
@@ -6,14 +8,15 @@
 
 html {
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 body {
     background-color: var(--bg-color);
     margin: 0;
     height: 100vh;
+    font-family: 'Poppins', sans-serif;
 }
-
 
 nav {
     width: 100vw;
@@ -39,4 +42,119 @@ nav {
 
 .ml-auto {
     margin-left: auto;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.btn-primary,
+.btn-ghost {
+    padding: .5rem 1rem;
+    border-radius: 0.6rem;
+    border: 1px solid var(--primary);
+    border-color: var(--primary);
+    box-shadow: none;
+    margin: 0 1rem;
+    font-size: 0.6rem;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: white;
+}
+
+.btn-ghost {
+    background-color:var(--bg-color);
+    color: var(--primary);
+}
+
+.btn-primary:hover,
+.btn-ghost:hover {
+    background-color: var(--secondary);
+    color: white;
+    border: 1px solid var(--secondary);
+}
+
+.main-header {
+    color: var(--secondary);
+    font-size: 1.3rem;
+    margin: 0;
+    font-weight: 700;
+}
+
+.typed-header {
+    margin-top: 4rem;
+}
+
+.button-list {
+    display: flex;
+    justify-content: center;
+}
+
+.mb-4 {
+    margin-bottom: 4rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.m-2 {
+    margin: 2rem;
+}
+
+.typed-cursor {
+    font-size: 2rem;
+    color: var(--secondary);
+}
+
+.skeleton-img {
+    max-width: 800px;
+    width: 100%;
+    margin-left: 0;
+}
+
+@media(min-width: 769px) {
+  .main-header {
+      font-size: 2.5rem;
+  }
+
+  .btn-primary,
+  .btn-ghost {
+      font-size: 0.9rem;
+      padding: 0.7rem 1.7rem;
+  }
+
+  .m-lg-2 {
+      margin: 2rem;
+  }
+
+  .skeleton-img {
+      width: 70%;
+      margin-left: -10rem;
+  }
+
+  .typed-cursor {
+      font-size: 3rem;
+      color: var(--secondary);
+  }
+
 }
