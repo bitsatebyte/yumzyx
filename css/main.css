@@ -1,0 +1,42 @@
+:root {
+    --primary: #EC1E69;
+    --secondary: #213454;
+    --bg-color: #FFEFF5;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    margin: 0;
+    height: 100vh;
+}
+
+
+nav {
+    width: 100vw;
+    height: 10vh;
+    background-color: white;
+}
+
+.text-decoration-none {
+    text-decoration: none;
+}
+
+.list-unstyled {
+    list-style: none;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+    padding-inline-end: 40px;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
