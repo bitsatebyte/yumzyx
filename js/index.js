@@ -9,6 +9,6 @@ const options = {
   const typed = new Typed('#type-animation', options);
 
 
-  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  // const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
-  isMobile ? document.getElementById('mobile-img').src = './static/assets/landing-page-mobile.svg' : '';
+  // isMobile ? document.getElementById('mobile-img').src = './static/assets/landing-page-mobile.svg' : '';
